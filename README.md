@@ -1,22 +1,28 @@
-# PinboardLogseq
+# pinboard_logseq
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pinboard_logseq`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem consumes the JSON export from Pinboard, and formats it as a Markdown file suitable for Logseq.
 
-TODO: Delete this and the text above, and describe your gem
+It generates a Markdown file correspond to each month in your Pinboard data. The files are stored in a directory named
+`output/`.
+
+Import the files into Logseq by dragging them into the `pages/` directory.
+
+If you have a large number of bookmarks, you may want to do this in stages, since it can cause Logseq to become
+unresponsive.
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add pinboard_logseq
-
-If bundler is not being used to manage dependencies, install the gem by executing:
+Install the gem by executing:
 
     $ gem install pinboard_logseq
 
 ## Usage
 
-TODO: Write usage instructions here
+Pass the path to your JSON export as `IMPORT_FILE`, e.g.
+
+```
+IMPORT_FILE="/Users/me/Desktop/pinboard_export.2022.12.18_23.19.json" pinboard_logseq
+```
 
 ## Development
 
@@ -26,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/pinboard_logseq.
+Bug reports and pull requests are welcome on GitHub at https://github.com/andyw8/pinboard_logseq.
 
 ## License
 
