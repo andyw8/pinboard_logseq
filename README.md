@@ -1,6 +1,6 @@
 # pinboard_logseq
 
-This gem consumes a JSON export from Pinboard, and formats them as Markdown files suitable for Logseq.
+This gem consumes a JSON export from Pinboard, and generatea a set of Markdown files suitable for Logseq.
 
 It generates separate Markdown files corresponding to each month in your Pinboard data. The files are saved to the `output/` directory.
 
