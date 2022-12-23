@@ -55,6 +55,7 @@ GEM
       sorbet-static (= 0.5.10595)
     sorbet-runtime (0.5.10597)
     sorbet-static (0.5.10595-universal-darwin-21)
+    sorbet-static (0.5.10595-x86_64-linux)
     standard (1.19.1)
       language_server-protocol (~> 3.17.0.2)
       rubocop (= 1.39.0)
@@ -65,6 +66,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   debug
