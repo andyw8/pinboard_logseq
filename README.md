@@ -2,10 +2,9 @@
 
 This gem consumes the JSON export from Pinboard, and formats it as a Markdown file suitable for Logseq.
 
-It generates a Markdown file correspond to each month in your Pinboard data. The files are stored in a directory named
-`output/`.
+It generates separate Markdown files correspondng to each month in your Pinboard data. The files are stored in the `output/` directory.
 
-Import the files into Logseq by dragging them into the `pages/` directory.
+Once generated, you can import the files into Logseq by copying or moving them into the your Logseq graph's `pages/` directory.
 
 If you have a large number of bookmarks, you may want to do this in stages, since it can cause Logseq to become
 unresponsive.
