@@ -33,7 +33,7 @@ module PinboardLogseq
           day = pin.time.day.ordinalize
           formatted_date = "#{month_name_short} #{day}, #{year}"
           content +=
-            "- 🔖 #{pin.description || "No description"}](#{pin.href}) [[#{formatted_date}]] "
+            "- 🔖 [#{pin.description || "No description"}](#{pin.href}) [[#{formatted_date}]] "
           content += "\n> #{pin.extended}" if pin.extended && pin.extended != ""
           tag_bits = pin.tags.map { |t| "[[#{t}]]" }
           tag_bits << "[[Pinboard - To Read]]" if pin.to_read
