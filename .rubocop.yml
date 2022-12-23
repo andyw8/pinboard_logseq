@@ -1,0 +1,17 @@
+# based on https://evilmartians.com/chronicles/rubocoping-with-legacy-bring-your-ruby-code-up-to-standard
+
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - rubocop-minitest
+  - rubocop-performance
+  - rubocop-rake
+  - standard
+
+inherit_gem:
+  standard: config/base.yml
+
+AllCops:
+  NewCops: disable

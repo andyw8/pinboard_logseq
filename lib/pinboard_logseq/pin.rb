@@ -32,10 +32,10 @@ module PinboardLogseq
   end
 end
 
-    def str_to_bool(str)
-      if str == "yes"
-        true
-      elsif str == "no"
-        false
-      end
-    end
+def str_to_bool(str)
+  if str == "yes"
+    true
+  elsif str == "no"
+    false
+  end
+end
