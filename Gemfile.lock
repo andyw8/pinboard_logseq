@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pinboard_logseq (0.1.1)
+    pinboard_logseq (0.1.2)
       activesupport
       sorbet-runtime
 
