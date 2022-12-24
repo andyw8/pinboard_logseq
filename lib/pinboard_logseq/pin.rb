@@ -20,22 +20,26 @@ module PinboardLogseq
       new(
         href: json["href"],
         description: json["description"],
-        extended: json["extended"],
+        extended: PinboardLogseq.clean_blockquote(json["extended"]),
         meta: json["meta"],
         pinboard_hash: json["hash"],
         time: Date.iso8601(json["time"]),
-        shared: str_to_bool(json["shared"]),
-        to_read: str_to_bool(json["toread"]),
+        shared: PinboardLogseq.str_to_bool(json["shared"]),
+        to_read: PinboardLogseq.str_to_bool(json["toread"]),
         tags: json["tags"].split(" ")
       )
     end
   end
-end
 
-def str_to_bool(str)
-  if str == "yes"
-    true
-  elsif str == "no"
-    false
+  def self.str_to_bool(str)
+    if str == "yes"
+      true
+    elsif str == "no"
+      false
+    end
+  end
+
+  def self.clean_blockquote(str)
+    str.gsub("<blockquote>", "").gsub("</blockquote>", "")
   end
 end
